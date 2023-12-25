@@ -19,11 +19,11 @@ pnpm add -D vite-plugin-import-css-sheet
 ## Enable
 ```typescript
 import { defineConfig } from 'vite';
-import { viteImportCss } from 'vite-plugin-import-css-sheet';
+import { viteImportCssSheet } from 'vite-plugin-import-css-sheet';
 
 export default defineConfig({
 	plugins: [
-		viteImportCss(),
+		viteImportCssSheet(),
 	],
 });
 ```
