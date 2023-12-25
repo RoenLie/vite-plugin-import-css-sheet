@@ -14,7 +14,7 @@ export const viteImportCssSheet = (): Plugin => {
 	};
 
 	const cssImportAssertRegex = (str: string) =>
-		new RegExp(str + `['"] *with|assert *{[(?:\r?\n) \t]*type: *'css'[(?:\r?\n) ]*};`);
+		new RegExp(str + `['"] *(?:with|assert) *{[(?:\r?\n) \t]*type: *['"]css['"][(?:\r?\n) ]*};`);
 
 	const convert = (str: string) => {
 		let res = '';
